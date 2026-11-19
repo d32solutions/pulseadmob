@@ -13,14 +13,14 @@
     <img src="icon.png" alt="">
     <div>
       <h1>Politique de confidentialité</h1>
-      <p class="sub">Pulse for AdMob · mise à jour le 14 novembre 2026 · <a href="#en">English below</a></p>
+      <p class="sub">Pulse for AdMob · mise à jour le 19 novembre 2026 · <a href="#en">English below</a></p>
       <nav><a href="./">← Accueil</a></nav>
     </div>
   </header>
 
   <div class="card">
     <h2 style="margin-top:0">En bref</h2>
-    <p>Pulse affiche vos statistiques AdMob. <b>Vos chiffres ne passent par aucun serveur à nous</b> : ils vont directement de l'API AdMob de Google à votre appareil. Nous ne vendons et ne partageons aucune donnée.</p>
+    <p>Pulse affiche vos statistiques AdMob et, si vous le souhaitez, vos chiffres App Store. <b>Vos chiffres ne passent par aucun serveur à nous</b> : ils vont directement des API de Google et d'Apple à votre appareil. Nous ne vendons et ne partageons aucune donnée.</p>
 
     <h3>Responsable</h3>
     <p>Frédéric Goffin, développeur indépendant, Bruxelles, Belgique — <a href="mailto:d32solutions@gmail.com">d32solutions@gmail.com</a>.</p>
@@ -29,9 +29,20 @@
     <p>La connexion utilise Google OAuth avec un accès en <b>lecture seule</b> à vos rapports AdMob (autorisation <code>admob.readonly</code>), ainsi que votre nom et votre adresse e-mail pour identifier le compte dans l'app. Les jetons d'accès sont conservés dans le trousseau sécurisé de votre appareil. Vous pouvez retirer un compte à tout moment dans Réglages, et révoquer l'accès sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
     <p>L'utilisation des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, y compris les exigences d'utilisation limitée (Limited Use).</p>
 
+    <h3>App Store Connect (facultatif, Pulse Pro)</h3>
+    <p>Vous pouvez relier votre compte App Store Connect pour voir vos téléchargements, achats intégrés, abonnements et avis à côté de vos revenus AdMob. Pour cela, vous créez vous-même une clé API App Store Connect et vous l'importez dans Pulse.</p>
+    <ul>
+      <li><b>La clé reste sur votre appareil</b> : le fichier de clé (.p8), l'Issuer ID, le Key ID et votre numéro de fournisseur sont conservés dans le trousseau sécurisé de votre appareil. Ils ne sont jamais envoyés ailleurs qu'à Apple.</li>
+      <li><b>Aucun serveur</b> : Pulse appelle directement l'API officielle d'Apple (<code>api.appstoreconnect.apple.com</code>) depuis votre appareil. Nous ne recevons ni votre clé, ni vos chiffres, ni vos avis.</li>
+      <li><b>Données lues</b> : rapports de ventes et de tendances (téléchargements, revenus, abonnements) et avis clients, avec les rôles que vous attribuez à la clé (« Ventes et rapports » et « Assistance client »).</li>
+      <li><b>Seule action d'écriture</b> : la publication d'une réponse à un avis, uniquement lorsque vous la rédigez et la publiez vous-même.</li>
+      <li><b>Taux de change</b> : pour convertir les revenus versés dans d'autres devises, Pulse télécharge des taux de change publics (<code>open.er-api.com</code>). Aucune donnée personnelle ni aucun chiffre n'est envoyé lors de cette demande.</li>
+    </ul>
+    <p>Vous pouvez supprimer la clé à tout moment dans Réglages › App Store Connect › Supprimer la clé : la clé et toutes les données App Store en cache sont alors effacées de l'appareil. Pensez aussi à révoquer la clé dans App Store Connect (Utilisateurs et accès › Intégrations) si vous ne l'utilisez plus.</p>
+
     <h3>Données conservées sur l'appareil</h3>
     <ul>
-      <li>Vos statistiques AdMob mises en cache, pour l'app, les widgets, l'activité en direct et l'Apple Watch ;</li>
+      <li>Vos statistiques AdMob et, si vous l'avez relié, App Store mises en cache, pour l'app, les widgets, l'activité en direct et l'Apple Watch ;</li>
       <li>Vos réglages, votre objectif mensuel et vos repères (journal).</li>
     </ul>
     <p>Ces données restent sur vos appareils Apple et sont supprimées avec l'app.</p>
@@ -54,14 +65,24 @@
 
   <div class="card" id="en" lang="en">
     <h2 style="margin-top:0">Privacy Policy (English)</h2>
-    <p>Pulse displays your AdMob statistics. <b>Your figures never pass through any server of ours</b>: they go directly from Google's AdMob API to your device. We do not sell or share any data.</p>
+    <p>Pulse displays your AdMob statistics and, if you choose, your App Store figures. <b>Your figures never pass through any server of ours</b>: they go directly from Google's and Apple's APIs to your device. We do not sell or share any data.</p>
     <h3>Controller</h3>
     <p>Frédéric Goffin, independent developer, Brussels, Belgium — <a href="mailto:d32solutions@gmail.com">d32solutions@gmail.com</a>.</p>
     <h3>Google Sign-In</h3>
     <p>Sign-in uses Google OAuth with <b>read-only</b> access to your AdMob reports (<code>admob.readonly</code>), plus your name and email address to label the account in the app. Access tokens are stored in your device's secure Keychain. You can remove an account in Settings at any time and revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
     <p>Pulse's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h3>App Store Connect (optional, Pulse Pro)</h3>
+    <p>You can connect your App Store Connect account to see your downloads, in-app purchases, subscriptions and reviews next to your AdMob earnings. To do so, you create an App Store Connect API key yourself and import it into Pulse.</p>
+    <ul>
+      <li><b>The key stays on your device</b>: the key file (.p8), Issuer ID, Key ID and vendor number are stored in your device's secure Keychain. They are never sent anywhere other than to Apple.</li>
+      <li><b>No server</b>: Pulse calls Apple's official API (<code>api.appstoreconnect.apple.com</code>) directly from your device. We never receive your key, your figures or your reviews.</li>
+      <li><b>Data read</b>: sales and trends reports (downloads, proceeds, subscriptions) and customer reviews, within the roles you give the key ("Sales and Reports" and "Customer Support").</li>
+      <li><b>Only write action</b>: publishing a reply to a review, only when you write and publish it yourself.</li>
+      <li><b>Exchange rates</b>: to convert proceeds paid in other currencies, Pulse downloads public exchange rates (<code>open.er-api.com</code>). No personal data or figures are sent with this request.</li>
+    </ul>
+    <p>You can remove the key at any time in Settings › App Store Connect › Remove key: the key and all cached App Store data are then erased from the device. You should also revoke the key in App Store Connect (Users and Access › Integrations) if you no longer use it.</p>
     <h3>Data stored on your device</h3>
-    <p>Cached AdMob statistics (for the app, widgets, Live Activity and Apple Watch), your settings, monthly goal and markers. They stay on your Apple devices and are deleted with the app.</p>
+    <p>Cached AdMob statistics (and App Store figures, if connected) (for the app, widgets, Live Activity and Apple Watch), your settings, monthly goal and markers. They stay on your Apple devices and are deleted with the app.</p>
     <h3>Advertising</h3>
     <p>The free version shows a Google AdMob banner. The Google Mobile Ads SDK may collect a device identifier, approximate location (derived from IP address), interaction and diagnostic data to serve and measure ads. In the EEA/UK, consent is requested through Google's consent platform, and iOS asks for tracking permission (ATT). You can change your choices in Settings › Ad privacy choices. Pulse Pro and the "Remove ads" purchase remove the banner.</p>
     <h3>Purchases, notifications, children</h3>
@@ -70,7 +91,7 @@
     <p><a href="mailto:d32solutions@gmail.com">d32solutions@gmail.com</a></p>
   </div>
 
-  <footer>© 2026 Frédéric Goffin · AdMob is a trademark of Google LLC. Pulse for AdMob is not affiliated with Google.</footer>
+  <footer>© 2026 Frédéric Goffin · AdMob is a trademark of Google LLC. App Store and App Store Connect are trademarks of Apple Inc. Pulse for AdMob is not affiliated with Google or Apple.</footer>
 </main>
 </body>
 </html>
